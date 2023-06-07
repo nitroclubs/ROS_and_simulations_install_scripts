@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt update -y
+
 echo "Install Dependent ROS 1 Packages"
 
 sudo apt install -y ros-melodic-joy ros-melodic-teleop-twist-joy \

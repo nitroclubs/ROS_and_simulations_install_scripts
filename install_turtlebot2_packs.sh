@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+sudo apt update -y
+
 echo "Install TurtleBot2 Packages in catkin_ws"
 name_catkin_workspace=${name_catkin_workspace:="catkin_ws"}
 cd
@@ -43,7 +45,7 @@ catkin_make
 sudo apt-get install ros-melodic-kobuki-* -y
 sudo apt-get install ros-melodic-ecl-streams -y
 sudo apt-get install ros-melodic-yocs-velocity-smoother -y
-sudo apt install -y ros-melodic-move-base* ros-melodic-map-server* ros-melodic-amcl* ros-melodic-navigation* 
+sudo apt install -y ros-melodic-move-base* ros-melodic-map-server* ros-melodic-amcl* ros-melodic-navigation* ros-melodic-joy
 
 cd $HOME/$name_catkin_workspace/
 catkin_make
